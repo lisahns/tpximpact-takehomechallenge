@@ -1,3 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    --primary: #0c661e;
+    --secondary: #9fedae;
+    --terciary: #FA8072;
+
+}
+
 body {
-    background-color:yellow;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    user-select: none;
+}
+
+.container .time {
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    color: var(--primary);
 }
