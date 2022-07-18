@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.yellow {
+    background-color:#f0c336;
+    padding: 100vh 3vw;
+}
+
+.green {
+    background-color:#315e11;
+    padding:100vh 30vw;
+}
+
+.blue {
+    background-color: #295fa0;
+    padding:100vh 18vw;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 30% 10% 30%;
+}
+
+/* .konzert {
+
+}
+
+.roles {
+
+}
+
+.artists {
+
+} */
