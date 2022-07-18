@@ -25,7 +25,7 @@ body {
   width: 70vw;
   grid-template-columns: 70% 10% 30%;
   grid-gap: 1rem;
-  margin: 43vh 0 0 18vh;
+  margin: 50vh 0 0 18vh;
 }
 
 .konzert {
