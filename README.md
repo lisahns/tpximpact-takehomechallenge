@@ -6,9 +6,10 @@ Please pick one poster and reproduce it using just HTML and CSS (no images), it 
 poster works on 810x1080 (Ipad)
 </br>
 screenshot of my poster:
+
 ![screenshot of poster from challenge one](https://github.com/lisahns/tpximpact-takehomechallenge/blob/c32ebfa246c4964f8e7f80a626d5942849a47475/Screen%20Shot%202022-07-19%20at%2016.09.45.png)
 
-
+</br>
 2. For this task you will create a HTML page with a functional stopwatch. The stopwatch must have the following features:
 - [x] Time display: The current elapsed time in the following format 00:00:00:00 (hours, minutes, seconds, centiseconds)
 - [x] Start button: A button to start or continue a timer.
