@@ -2,6 +2,7 @@ const startBtn = document.querySelector(".start");
 const stopBtn = document.querySelector(".stop");
 const resetBtn = document.querySelector(".reset");
 const lapBtn = document.querySelector(".lap");
+const clearBtn = document.querySelector(".clear");
 let hr = min = sec = ms = "0" + 0;
 let timer = false;
 
@@ -65,11 +66,12 @@ const time = document.querySelector("ul");
 
 lap = () => {
     let laps = document.createElement("li");
-    console.log(hr, min, sec, ms)
     laps.textContent = `${hr}:${min}:${sec}:${ms}`
-    console.log(laps);
     time.appendChild(laps);
-    console.log(laps);
+}
+
+clear = () => {
+    time.innerHTML = "";
 }
 
 
@@ -77,3 +79,4 @@ startBtn.addEventListener("click", start);
 stopBtn.addEventListener("click", stopp);
 resetBtn.addEventListener("click", reset);
 lapBtn.addEventListener("click", lap);
+clearBtn.addEventListener("click", clear);
