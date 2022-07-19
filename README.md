@@ -2,6 +2,9 @@
 
 1. Part one is a simple exercise where you will replicate a poster using HTML and CSS.
 Please pick one poster and reproduce it using just HTML and CSS (no images), it does not need to be responsive, but it should look correct in modern browsers such as Chrome, Firefox, Safari and Microsoft Edge.
+</br>
+poster works on 810x1080 (Ipad)
+</br>
 screenshot of my poster:
 ![screenshot of poster from challenge one](https://github.com/lisahns/tpximpact-takehomechallenge/blob/c32ebfa246c4964f8e7f80a626d5942849a47475/Screen%20Shot%202022-07-19%20at%2016.09.45.png)
 
