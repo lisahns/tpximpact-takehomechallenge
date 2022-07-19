@@ -3,11 +3,13 @@ const stopBtn = document.querySelector(".stop");
 const resetBtn = document.querySelector(".reset");
 const lapBtn = document.querySelector(".lap");
 let hr = min = sec = ms = "0" + 0;
+let timer = false;
 
 start = () => {
     startBtn.classList.add("active");
     stopBtn.classList.remove("stopActive");
-
+if (!timer){
+timer = true;
     startTimer = setInterval(() => {
         ms++
         ms = ms < 10 ? "0" +ms : ms;
@@ -30,11 +32,13 @@ start = () => {
         counter();
     },10); // 1000ms = 1s
 }
+}
 
 stopp = () => {
     startBtn.classList.remove("active");
     stopBtn.classList.add("stopActive");
     clearInterval(startTimer);
+    timer = false;
 }
 
 reset = () => {
@@ -42,6 +46,7 @@ reset = () => {
     stopBtn.classList.remove("stopActive");
     clearInterval(startTimer);
     let hr = min = sec = ms = "0" + 0;
+    timer = false;
     counter()
 }
 
@@ -50,6 +55,10 @@ counter = () => {
     document.querySelector(".second").innerText = sec;
     document.querySelector(".minute").innerText = min;
     document.querySelector(".hour").innerText = hr;
+}
+
+stopClock = () => {
+    clearInterval(startTimer);
 }
 
 
