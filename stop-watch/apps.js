@@ -61,8 +61,19 @@ stopClock = () => {
     clearInterval(startTimer);
 }
 
+const time = document.querySelector("ul");
+
+lap = () => {
+    let laps = document.createElement("li");
+    console.log(hr, min, sec, ms)
+    laps.textContent = `${hr}:${min}:${sec}:${ms}`
+    console.log(laps);
+    time.appendChild(laps);
+    console.log(laps);
+}
+
 
 startBtn.addEventListener("click", start);
 stopBtn.addEventListener("click", stopp);
 resetBtn.addEventListener("click", reset);
-// lapBtn.addEventListener("click", lap);
+lapBtn.addEventListener("click", lap);
