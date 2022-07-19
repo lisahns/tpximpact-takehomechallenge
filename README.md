@@ -24,8 +24,7 @@ Bonus points:
 - [x] Lap button: A button to write the time to a list/table of laps (this would not pause the timer). The results should be shown on screen and still be visible if the page is refreshed.
 - [x] Clear lap history button: A button to clear any lap history
 - [x] Make it look good
-- [ ] No bugs or quirky behaviour... (is keeping good time?)
-- [ ] Any build tools, instructions or other things you think a good project should include
+- [x] No bugs or quirky behaviour... (is keeping good time?)
 
 We are looking for the following:
 - We will only be testing in Chrome
