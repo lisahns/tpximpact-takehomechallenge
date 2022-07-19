@@ -3,7 +3,7 @@
 1. Part one is a simple exercise where you will replicate a poster using HTML and CSS.
 Please pick one poster and reproduce it using just HTML and CSS (no images), it does not need to be responsive, but it should look correct in modern browsers such as Chrome, Firefox, Safari and Microsoft Edge.
 screenshot of my poster:
-![screenshot of poster from challenge one](https://github.com/lisahns/tpximpact-takehomechallenge/blob/197c53da864774589679c84a2ec9542cff699022/Screenshot%20from%202022-07-18%2012-50-44.png)
+![screenshot of poster from challenge one](https://github.com/lisahns/tpximpact-takehomechallenge/blob/c32ebfa246c4964f8e7f80a626d5942849a47475/Screen%20Shot%202022-07-19%20at%2016.09.45.png)
 
 
 2. For this task you will create a HTML page with a functional stopwatch. The stopwatch must have the following features:
@@ -14,8 +14,8 @@ screenshot of my poster:
 
 Bonus points:
 
-- [ ] Lap button: A button to write the time to a list/table of laps (this would not pause the timer). The results should be shown on screen and still be visible if the page is refreshed.
-- [ ] Clear lap history button: A button to clear any lap history
+- [x] Lap button: A button to write the time to a list/table of laps (this would not pause the timer). The results should be shown on screen and still be visible if the page is refreshed.
+- [x] Clear lap history button: A button to clear any lap history
 - [x] Make it look good
 - [ ] No bugs or quirky behaviour... (is keeping good time?)
 - [ ] Any build tools, instructions or other things you think a good project should include
