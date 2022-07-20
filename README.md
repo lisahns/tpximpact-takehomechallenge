@@ -2,8 +2,13 @@
 
 1. Part one is a simple exercise where you will replicate a poster using HTML and CSS.
 Please pick one poster and reproduce it using just HTML and CSS (no images), it does not need to be responsive, but it should look correct in modern browsers such as Chrome, Firefox, Safari and Microsoft Edge.
-poster works on 810x1080 (Ipad)
+</br>
+poster works on 810x1080 (Ipad) 
+</br>
 
+[see poster here](https://lisahns.github.io/tpximpact-takehomechallenge/poster/)
+
+</br>
 </br>
 
 screenshot of my poster:
@@ -12,6 +17,8 @@ screenshot of my poster:
 
 </br>
 
+
+[see stop-watch here](https://lisahns.github.io/tpximpact-takehomechallenge/stop-watch/)
 
 2. For this task you will create a HTML page with a functional stopwatch. The stopwatch must have the following features:
 - [x] Time display: The current elapsed time in the following format 00:00:00:00 (hours, minutes, seconds, centiseconds)
