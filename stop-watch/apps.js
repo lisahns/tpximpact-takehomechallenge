@@ -60,17 +60,30 @@ stopClock = () => {
   clearInterval(startTimer);
 };
 
-const time = document.querySelector("ul");
+let time = document.querySelector("ul");
 
 lap = () => {
   let laps = document.createElement("li");
   laps.textContent = `${hr}:${min}:${sec}:${ms}`;
   time.appendChild(laps);
+  console.log(time)
+  localStorage.setItem("lapStorage", time);
+  let storage = localStorage.getItem("lapStorage");
+  console.log(storage)
+
+
+  // if (laps) {
+  //   laps.textContent = storage
+  // }
 };
 
 clear = () => {
   time.innerHTML = "";
 };
+
+// saveLocal = () => {
+//   localStorage.setItem("lapsStorage", laps)
+// }
 
 startBtn.addEventListener("click", start);
 stopBtn.addEventListener("click", stopp);
