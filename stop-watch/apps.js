@@ -3,6 +3,7 @@ const stopBtn = document.querySelector(".stop");
 const resetBtn = document.querySelector(".reset");
 const lapBtn = document.querySelector(".lap");
 const clearBtn = document.querySelector(".clear");
+const time = document.querySelector("ul");
 let hr = (min = sec = ms = "0" + 0);
 let timer = false;
 
@@ -60,30 +61,72 @@ stopClock = () => {
   clearInterval(startTimer);
 };
 
-let time = document.querySelector("ul");
+
+
+//first time I am using local storage, 
+//did not manage to finish the task and clearly need more practice
+//I spent a lot of time on this trying to make it work, but I did not manage.
+//I left some approaches commented to show how I tried to make this work
 
 lap = () => {
-  let laps = document.createElement("li");
-  laps.textContent = `${hr}:${min}:${sec}:${ms}`;
-  time.appendChild(laps);
-  console.log(time)
-  localStorage.setItem("lapStorage", time);
-  let storage = localStorage.getItem("lapStorage");
-  console.log(storage)
+  
+    // let time = document.querySelector("ul");
+    let laps = document.createElement("li");
+    laps.textContent = `${hr}:${min}:${sec}:${ms}`;
+    // time.appendChild(laps);
+    // localStorage.setItem("timeStorage", JSON.stringyfy(time));
+    // let storage = localStorage.getItem("lapStorage")
+    // // console.log(storage)
+ createLaps(laps)
+ setLocalStorage("laps", laps.innerHTML)
+
+    //   for (let i = 0; i < localStorage.length-1; i++) {
+    //     let storage = localStorage.getItem("lapStorage")
+    // console.log(storage)
+    //     let laps = document.createElement("li");
+    //     laps.textContent = storage
+    //     time.appendChild(laps)
+      
+    // }
+  };
+
+//   document.addEventListener("DOMContentLoaded", () => {
+//     if (localStorage) {
+//     console.log("hi")
+//     let storage = JSON.parse(localStorage.getItem("timeStorage"))
+//     console.log(storage)
+//  } }
+//   )
+
+  createLaps = (laps) => {
+    time.appendChild(laps)
+  }
 
 
-  // if (laps) {
-  //   laps.textContent = storage
-  // }
-};
+  function setLocalStorage(key, data) {
+    const storage = JSON.parse(localStorage.getItem(key)) || [];
+    storage.push(data);
+    localStorage.setItem(key, JSON.stringify(storage));
+    console.log(storage)
+    displayLaps(time);
+  }
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const saved = JSON.parse(localStorage.getItem("laps"));
+  
+    saved.forEach((lapTime) => {
+      const laps = document.createElement("li");
+      laps.innerHTML = lapTime;
+      time.appendChild(laps);
+    });
+  });
+
+
 
 clear = () => {
   time.innerHTML = "";
 };
-
-// saveLocal = () => {
-//   localStorage.setItem("lapsStorage", laps)
-// }
 
 startBtn.addEventListener("click", start);
 stopBtn.addEventListener("click", stopp);
